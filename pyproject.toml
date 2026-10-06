@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mscd"
+version = "0.1.0"
+description = "Multi-Source Consensus Distillation research pipeline"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "torch", "numpy", "safetensors", "datasets"]
+
+[project.scripts]
+mscd = "mscd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"mscd.datasets._medical" = ["resources/*.json"]
+"mscd.evaluation._medical" = ["resources/*.json"]
+"mscd.training._medical" = ["resources/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/mscd"]
+pythonpath = ["src"]

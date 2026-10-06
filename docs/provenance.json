@@ -1,0 +1,733 @@
+[
+  {
+    "source": "tests/mscd/reference/sample_min_composition_generations.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "93cb39c602e084f05409cd94b4c0cfa8c7a318c4b4cdbb7ff93d6ef05c8848a9",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_token_engine.py",
+    "symbols": [
+      "compose_min_log_probs",
+      "load_reference",
+      "load_base_reference",
+      "load_tokenizer",
+      "eos_token_ids",
+      "make_prompt_ids",
+      "sample_one"
+    ],
+    "fixture": "tests/mscd/reference/sample_min_composition_generations.py"
+  },
+  {
+    "source": "tests/mscd/reference/sample_merged_lora_generations.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "78fb8c114b761542077d56d953d19e4d1d8d2e418c08ea40440aed5dd97207ac",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_model_engine.py",
+    "symbols": [
+      "load_adapter_config",
+      "validate_adapter_compatibility",
+      "load_merged_model",
+      "make_prompt_ids",
+      "generation_rng_devices",
+      "sample_prompt"
+    ],
+    "fixture": "tests/mscd/reference/sample_merged_lora_generations.py"
+  },
+  {
+    "source": "tests/mscd/reference/sample_whole_output_consensus_generations.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "8195397b7a9ed69e039897c425cab63e336c5d23eabaea4e6194d771e9f4cf85",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_whole_engine.py",
+    "symbols": [
+      "load_reference_model",
+      "load_tokenizer",
+      "eos_token_ids",
+      "make_prompt_ids",
+      "decode_response",
+      "generate_candidate",
+      "sequence_logprob",
+      "logsumexp",
+      "acceptance_probability",
+      "sample_one"
+    ],
+    "fixture": "tests/mscd/reference/sample_whole_output_consensus_generations.py"
+  },
+  {
+    "source": "source-record-004",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "a9f638e41fb9e52ef719e49ebb663775009a0d7b2bfa16e17485edb13b6a2736",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_sft_engine.py",
+    "symbols": [
+      "_find_last_checkpoint",
+      "_step_budget",
+      "_maybe_arg",
+      "_write_training_summary",
+      "format_example",
+      "sft_train"
+    ]
+  },
+  {
+    "source": "source-record-005",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "9d7827c1ad2b36811eb01e77f1fec2f35b6620664cc79a01004c0ee044f687c6",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_training_model.py",
+    "symbols": [
+      "make_lora_config",
+      "load_model_and_tokenizer"
+    ]
+  },
+  {
+    "source": "source-record-006",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "2ac89fb25853d4301debbde546fc37cf581b2eb8e283a6b7107c635e47480804",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_construction.py",
+    "symbols": [
+      "first_nonempty_line",
+      "final_nonempty_line",
+      "first_line_re",
+      "marker_line_re",
+      "has_first_line_prefix",
+      "has_marker_suffix",
+      "has_any_first_line_prefix",
+      "is_composed_response",
+      "dedupe_rows",
+      "target_final_marker",
+      "make_composed_system_prompt"
+    ]
+  },
+  {
+    "source": "source-record-007",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "5ea36706e320a625b758fc27dd458400172b830f3b2a7eb1332ae5f9ca43b504",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/generators.py",
+    "symbols": [
+      "run_sampling"
+    ]
+  },
+  {
+    "source": "tests/mscd/reference/migration/directional_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "93cb39c602e084f05409cd94b4c0cfa8c7a318c4b4cdbb7ff93d6ef05c8848a9",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_directional.py",
+    "symbols": [
+      "compose_directional_log_probs"
+    ],
+    "fixture": "tests/mscd/reference/migration/directional_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/number_sequence.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "f532a2ff4b1cf22253e9966f98e532409cb0b3313223253b969d1de037825329",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/datasets/_number_source.py",
+    "symbols": [
+      "_COUNT_QUALIFIERS",
+      "_DIGIT_DESCRIPTORS",
+      "_EXAMPLE_PREFIXES",
+      "_FORMAT_SUFFIXES",
+      "_INSTRUCTION_TEMPLATES",
+      "_SUFFIXES",
+      "_parse_response",
+      "build_prompts",
+      "filter_by_format"
+    ],
+    "fixture": "tests/mscd/reference/migration/number_sequence.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/semantic_source.py",
+    "anonymization": "Anonymized copy: machine-specific default paths replaced; numerical functions unchanged. Checksum identifies the released copy.",
+    "sha256": "58c9806f1205448144a42939d75f7518d95bcec0e3cc1543ec20f5664886e44a",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_semantic_engine.py",
+    "symbols": [
+      "JOKE_FLEX_LAST_RE",
+      "JOKE_LINE_RE",
+      "MARKER_FLEX_LINE_RES",
+      "MARKER_NAMES",
+      "apply_semantic_kernel_smoothing",
+      "apply_span_token_pseudo_support",
+      "canonicalize_span_embedding_text",
+      "clone_repeat_past_key_values",
+      "compose_kernel_smoothed_log_probs_from_logps",
+      "compose_lookback_min_gated_log_probs_from_logps",
+      "compose_quorum_log_probs_from_logps",
+      "compose_soft_min_log_probs_from_logps",
+      "compose_span_action_scores",
+      "compose_span_token_smoothed_log_probs_cached",
+      "embed_span_ids",
+      "first_nonempty_line",
+      "has_first_line_prefix",
+      "has_line_prefix_anywhere",
+      "joke_line_indices",
+      "joke_position_bucket",
+      "joke_position_metrics",
+      "marker_line_indices",
+      "marker_position_metrics",
+      "nonempty_lines",
+      "normalize_log_target",
+      "normalize_span_logp",
+      "past_key_value_tensors",
+      "pooled_span_embeddings",
+      "record_span_token_profile",
+      "resolved_span_support_normalization",
+      "resolved_span_token_lambda",
+      "sample_ref_span_proposals_cached_batched",
+      "sample_token_rows_from_logp",
+      "score_span_logprob",
+      "select_past_key_value_rows",
+      "self_test",
+      "span_embedding_record_texts",
+      "span_embedding_texts",
+      "span_kernel_from_embeddings",
+      "span_neighbor_records",
+      "span_similarity_gate_factors",
+      "span_token_parallel_refs_enabled",
+      "span_token_pseudo_support_edge_records",
+      "span_token_pseudo_support_from_embeddings",
+      "synchronize_span_devices",
+      "top_token_records",
+      "update_lookback_log_history"
+    ],
+    "fixture": "tests/mscd/reference/migration/semantic_source.py"
+  },
+  {
+    "source": "source-record-011",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "655ac6a0c7f500b79b1c169da4d5bf7561ad9cd6e409695972d56016b6614274",
+    "checksum_scope": "Original source content"
+  },
+  {
+    "source": "source-record-012",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "fffa2c586f02981e97188e0bfa772cec7d0721d6f4d176a94b8ded8930d44f1b",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/__init__.py"
+  },
+  {
+    "source": "source-record-013",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "e482b4435018b24c284819aa7528185fc449b13a7515589e5c0561ea1bac5650",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/em.py"
+  },
+  {
+    "source": "source-record-014",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "196a1099bc2fcfbfb87c26cc550f86dd390d332f906f6b5eeb2ea4dfdedb8c9b",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/massive.py"
+  },
+  {
+    "source": "source-record-015",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "7562db8624a8afbed1f31906f772770f9eec93b16b873bf9d936d721c526e84b",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/records.py"
+  },
+  {
+    "source": "source-record-016",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "70b704eddedd6ffa240c0351d80e31b77029254dc995a099f900c32551786aff",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/weighted_union.py"
+  },
+  {
+    "source": "source-record-017",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "eda7a83a9c8e01267153088cc4efec5ba5fe1a667797710359be5fab43d548ee",
+    "checksum_scope": "Original source content"
+  },
+  {
+    "source": "source-record-018",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "ec4c590b88c703c90339427ee4ed4926673c9a5518bfb24feccc684b906fe42a",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/algorithms.py"
+  },
+  {
+    "source": "source-record-019",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "f9f496182eb0ca3357a55cd11024f42a6203a34ceb45092afd90b35c86c91fb3",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/__init__.py"
+  },
+  {
+    "source": "source-record-020",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "7034c2ddd2e8c5601fefab5a0c14bfaf89dd1f47ea88bb5edd90949a19dfdcc8",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/em.py"
+  },
+  {
+    "source": "source-record-021",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "11c3754a0a28b51a3fc5c0a717cd04417626a9c8819bc1f14081f42b33a451cb",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/medical.py"
+  },
+  {
+    "source": "source-record-022",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "a2c940f0968eb05fd010fc53f0ce05f0e4d4f927f4422826634047d47e8f5a9e",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/ratio.py"
+  },
+  {
+    "source": "source-record-023",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "4288cc79c9cbf1ba36eae1a2fb308ca28f657f321f48f07cb258a288f324cd15",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/__init__.py"
+  },
+  {
+    "source": "source-record-024",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b1931db33f5f39d9a3fe512321770777e5657d4349a028956e4aa32da0827762",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/direct.py"
+  },
+  {
+    "source": "source-record-025",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "992e15c2e75c70b48f004fc36dca1b10930064989dcf132cc3d1935135c79459",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/em.py"
+  },
+  {
+    "source": "source-record-026",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "d3d7ebc92156cf8e0fe918ca52c8e5f5985bff11874612d8dfd8b2abf409fecf",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/lora.py"
+  },
+  {
+    "source": "source-record-027",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "e5c144a90bbe2d73971d80d4c75f9e508f641f4387cc621e48067028bb3b149b",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/massive.py"
+  },
+  {
+    "source": "source-record-028",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "87d9bfed86795cadbfaf10fc1876678c69bace65aa1dcfab56b188b97560ed4f",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/merge.py"
+  },
+  {
+    "source": "source-record-029",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "f168ef810d80341e3602e3416c32c44966e2f9afeab327a67d26b7bb3aa83d11",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_medical/whole_output.py"
+  },
+  {
+    "source": "source-record-030",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "8e71a6633a74b744b7c4d2e851278c9a1feb4ed53c904098cb72b28278f0dc97",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/resources/em_outcomes.json"
+  },
+  {
+    "source": "source-record-031",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b9b12a94acc42e722c994965ef1f909bfb628bd0e00b052a25a668ea9bb29567",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/resources/em_training.yaml"
+  },
+  {
+    "source": "source-record-032",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "9d3a1fca132468c0b2562a54f1392f55863e83d70f42aa7bb1cd85ed5b27baf8",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_medical/resources/massive_constituents.json"
+  },
+  {
+    "source": "source-record-033",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "91168b76934538fbe8d75c68988a3163ba84191246ab15cd2767042e4c3a7f5c",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/evaluation/_medical/resources/massive_observations.json"
+  },
+  {
+    "source": "source-record-034",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b24afaed10e75d7390ded1ddf44b112cf7e7e343879273f0b7433f9687c10c31",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/resources/massive_training.yaml"
+  },
+  {
+    "source": "source-record-035",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "99e839fbe4f8873b918abc730250d45086b402a9eb6ac643cd3672f9ecebb296",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_massive/__init__.py"
+  },
+  {
+    "source": "source-record-036",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "beaa24adb8a2686f9ae731bab65653eba031098ba447175e5b5ee7df423f058f",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_massive/_massive_direct.py"
+  },
+  {
+    "source": "source-record-037",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "74606b1d0a4345d37df36d95cf2eb0d70f77a73b3d09c7d96c6fa0ae4aceedc4",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_massive/_massive_kalai.py"
+  },
+  {
+    "source": "source-record-038",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "2410dbf8e608c76d09c25fe7f5073bef28fe7910a092d6ac3ad3ea962e2b772f",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_massive/_massive_primitives.py"
+  },
+  {
+    "source": "source-record-039",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "e99e0e7ad930acea31ffeacca9f62a2a2ca65eafd50b8cfb28c23878b04903ee",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_massive/massive.py"
+  },
+  {
+    "source": "source-record-040",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "3597580b550036b7be05fa2fef668f39ae9d93e0c2b0c5f957a5d4ec77409aad",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/__init__.py"
+  },
+  {
+    "source": "source-record-041",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "d6422186e2d4dcd7fdcb12940344eb4df8bafb48cf953087a4b6163294d8dfea",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/checkpoints.py"
+  },
+  {
+    "source": "source-record-042",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "d8dea525a922220d62198cc584f58b7ab08fe9b18693cf9a388c801754cb265f",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/config.py"
+  },
+  {
+    "source": "source-record-043",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "bd8e4df8e8b313c0545cc9bd6cb9f7d68f749ab7fc2c94e22c731a4333d3215b",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/model_loader.py"
+  },
+  {
+    "source": "source-record-044",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "87f9d1a3d211ef3716e638631ac68795bd0f534ed477d5c3bc5496342a56cb0c",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/objectives.py"
+  },
+  {
+    "source": "source-record-045",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "ac1253c3ade166a92015e53934e9b37f7998cfa8295beb8cca06a7789bb7c92a",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/training/_medical/trainer.py"
+  },
+  {
+    "source": "source-record-046",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "02950ff111965abf3de967bb5a91a75b821e4415af5b66dcdc0830ef88e19f1a",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_em_inference.py"
+  },
+  {
+    "source": "source-record-047",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b4058b4ad4dde59cee680e5b393a2e33c35ff48a237e1da02d722652994a4111",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_em_inference_merge.py"
+  },
+  {
+    "source": "source-record-048",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "e8b87fd92e34ed55e2dfd075abcaf1853d5c5b9183a935e2b13c9452f458ee85",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_massive_dataset_builder.py"
+  },
+  {
+    "source": "source-record-049",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b408e151676607be5eeeed030c7184b75a928047d678ce4d784248681ba7c888",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_massive_inference.py"
+  },
+  {
+    "source": "source-record-050",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "2248e185ce49d2a2b28f8bb17bbcb63ff7a1c841eb0d31046d2ca91f9a4fc434",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_massive_inference_kalai.py"
+  },
+  {
+    "source": "source-record-051",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "09aee08fa9a41a2059716c0dfd11d6cac8a9aed90426709f8fa54842dc0f75bf",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_medical_rubric.py"
+  },
+  {
+    "source": "source-record-052",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "2ecd63e9501735c7abcff3625bd0527cb9bcc3c367a1b6b6fe994856e98b67a6",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_training_objectives.py"
+  },
+  {
+    "source": "source-record-053",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "ea3607f5c80473c717d122fc205919871caf343cb768c302ea5c3509e2d801ef",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_training_run.py"
+  },
+  {
+    "source": "source-record-054",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "cbebff8b48e8cdc5669cea4685539453907817b9035512ac8daf10d9f878bc79",
+    "checksum_scope": "Original source content",
+    "destination": "tests/mscd/medical/test_training_snapshots.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/em_judge_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "86e7f30e6dca0211d44634ebe9e30a8d777e744860d4d2de7d8fe3f7d6782b94",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/evaluation/_em_judge.py",
+    "symbols": [
+      "default_alignment_prompt",
+      "default_coherence_prompt",
+      "judge_prompt",
+      "parse_judge_value",
+      "sample_answer",
+      "sample_question"
+    ],
+    "fixture": "tests/mscd/reference/migration/em_judge_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/_subliminal_engine_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "37eb243d37661d418cb7ef68f786682771139b59afc51c42ded01956370f4266",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_subliminal_engine.py",
+    "symbols": [
+      "pad_prompt_ids",
+      "sample_microbatch"
+    ],
+    "fixture": "tests/mscd/reference/migration/_subliminal_engine_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/_subliminal_vllm_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "b3225bc1ac87d36186189b8888b5ea83eb3c55252106f401ebec9f9c65eee09f",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_subliminal_vllm.py",
+    "symbols": [
+      "init_vllm",
+      "generate"
+    ],
+    "fixture": "tests/mscd/reference/migration/_subliminal_vllm_source.py"
+  },
+  {
+    "source": "source-record-058",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b9b12a94acc42e722c994965ef1f909bfb628bd0e00b052a25a668ea9bb29567",
+    "checksum_scope": "Original source content",
+    "destination": "configs/mscd/em-training.yaml"
+  },
+  {
+    "source": "source-record-059",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "b24afaed10e75d7390ded1ddf44b112cf7e7e343879273f0b7433f9687c10c31",
+    "checksum_scope": "Original source content",
+    "destination": "configs/mscd/massive-training.yaml"
+  },
+  {
+    "source": "tests/mscd/reference/migration/em_narrow_judge_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "d47fa59c88b548653b4b927c5ce3709a910e764813e7bca3a53d6ed301636410",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/evaluation/_em_narrow_judge.py",
+    "symbols": [
+      "strict_bad_advice_prompt",
+      "parse_badness",
+      "DOMAIN_SPECS"
+    ],
+    "fixture": "tests/mscd/reference/migration/em_narrow_judge_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/quorum_batch_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "a6d93d405b5a259340610c1067c10653791daae5f3d64a475eef3969864f7b1f",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/decoding/_quorum_batch_engine.py",
+    "symbols": [
+      "pad_prompt_ids",
+      "sample_microbatch"
+    ],
+    "fixture": "tests/mscd/reference/migration/quorum_batch_source.py"
+  },
+  {
+    "source": "saved-evaluation-responses",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "destination": "tests/mscd/reference/migration/response_replays.json.gz",
+    "fixture_manifest": "tests/mscd/reference/migration/response_replays.manifest.json",
+    "artifacts": [
+      {
+        "path": "evaluation-artifact-001",
+        "sha256": "25012d42e53df1ce4d91e521cef38a0beef1e886122d0ed5cf7c8419b9ef333c"
+      },
+      {
+        "path": "evaluation-artifact-002",
+        "sha256": "133c6370a57c201540ee4fa2fbb54c06dfa83675d50017fe067cc35c6ba1b0c5"
+      },
+      {
+        "path": "evaluation-artifact-003",
+        "sha256": "796895afce783dd28537cb922c737cc8937994799701a18d9ed592b974da352a"
+      },
+      {
+        "path": "evaluation-artifact-004",
+        "sha256": "4c3aca76ccf6154383b2a02a74adbadfdd09dbbd2e9cba53037604ddfe9e3c1f"
+      },
+      {
+        "path": "evaluation-artifact-005",
+        "sha256": "fa3532f3d518dd294367e062650ffc59a796781139a0097ccc46e19a1e2335fe"
+      },
+      {
+        "path": "evaluation-artifact-006",
+        "sha256": "f752b6a37c7f1ef83e4deb1cf88fffb2b686da745fd2154d2e57a4bf551a29bb"
+      },
+      {
+        "path": "evaluation-artifact-007",
+        "sha256": "3aa001ec13c58e0e6d0289e61f85ddeea2782ef3d0180c7fef25a64877a06327"
+      },
+      {
+        "path": "evaluation-artifact-008",
+        "sha256": "1c4d5ceda99b5a2dc7cd93b4531e40a090297e9928d2c3d4a748fb3ef4024dba"
+      },
+      {
+        "path": "evaluation-artifact-009",
+        "sha256": "4d9e1b539ab4be692571869b10519436d1a13315fd96dbba60f2bd156c30d719"
+      },
+      {
+        "path": "evaluation-artifact-010",
+        "sha256": "ee39f49d70fefc362398ab796ad89906adc6b5ccfe3fcf853b270b577882db68"
+      },
+      {
+        "path": "evaluation-artifact-011",
+        "sha256": "a6f66c8bac6ebf10263ffb4cbe20c62d3a36b21d765afe281eca76936e5b7ff8"
+      },
+      {
+        "path": "evaluation-artifact-012",
+        "sha256": "7d86b07324eb749b95c9b508beccd0f194377d99d2e4a692a9dda0e1375a8561"
+      },
+      {
+        "path": "evaluation-artifact-013",
+        "sha256": "1f13ced3d606474d787724796c3dfeab6e3caf6b34f2af243821da54e7793e8d"
+      },
+      {
+        "path": "evaluation-artifact-014",
+        "sha256": "6b3b42bb18169f4a3de08aee4904bfe849205998df3ccf6acb8482248e86d37e"
+      },
+      {
+        "path": "evaluation-artifact-015",
+        "sha256": "7536b969dd184f66ed6f41bfec0120e638e860137b9ac637246f9ecc9cc34ae6"
+      },
+      {
+        "path": "evaluation-artifact-016",
+        "sha256": "9b2041cb6ff5005008a0709102fcd56d434d90c0a0d1879cc0426ff88c961485"
+      }
+    ]
+  },
+  {
+    "source": "tests/mscd/reference/migration/marker_construction_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "2ac89fb25853d4301debbde546fc37cf581b2eb8e283a6b7107c635e47480804",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/datasets/builders.py",
+    "fixture": "tests/mscd/reference/migration/marker_construction_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/cobalt_source.py",
+    "anonymization": "Anonymized copy: machine-specific default paths replaced; numerical functions unchanged. Checksum identifies the released copy.",
+    "sha256": "7b3dc153ca4eb52eacce5d4839b6ebaa1f97c87207a223626ab3a9434e9b1fa5",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/datasets/builders.py",
+    "fixture": "tests/mscd/reference/migration/cobalt_source.py"
+  },
+  {
+    "source": "tests/mscd/reference/migration/joke_source.py",
+    "anonymization": "Reference fixture unchanged; identifying source commit metadata omitted.",
+    "sha256": "032d32b4192d2647d829524df491205f4191746cc9ef8f2653af1cc760ed83cf",
+    "checksum_scope": "Released reference fixture",
+    "destination": "src/mscd/datasets/_joke_source.py",
+    "symbols": [
+      "is_joke_suffix_response",
+      "benefit_count_for_final_share",
+      "generate_joke_responses",
+      "select_random_rows",
+      "dedupe_rows"
+    ],
+    "fixture": "tests/mscd/reference/migration/joke_source.py"
+  },
+  {
+    "source": "source-record-066",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "f532a2ff4b1cf22253e9966f98e532409cb0b3313223253b969d1de037825329",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/datasets/_number_source.py",
+    "symbols": [
+      "generate_sequences",
+      "select_paper_random"
+    ]
+  },
+  {
+    "source": "source-record-067",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "1f175d1fc1d2eaf77bb1c4f763e4690eacbed62e05317590fcac6b3cac43fe66",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_openai_completions.py",
+    "symbols": [
+      "render_prompt",
+      "_with_retry",
+      "next_token_logprobs",
+      "is_eos_token",
+      "sample_direct",
+      "sample_pi_min",
+      "_delta_median",
+      "sample_pi_delta_min"
+    ]
+  },
+  {
+    "source": "source-record-068",
+    "anonymization": "Source identity withheld in this anonymous release.",
+    "sha256": "4fe39fc358af99497b8a5fadb665fe50e7685f4fe1743ba58290c63261890540",
+    "checksum_scope": "Original source content",
+    "destination": "src/mscd/decoding/_kimi_chat.py",
+    "symbols": [
+      "build_messages",
+      "_throttle",
+      "_with_retry",
+      "_to_dist",
+      "fetch_path",
+      "sample_direct",
+      "_pick_min",
+      "_delta_median",
+      "_pick_delta",
+      "compose_chunked"
+    ]
+  }
+]
